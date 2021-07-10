@@ -33,20 +33,20 @@ public class Acoes extends Principal {
             driver.get(list.get(numPage));
             Acoes.holdTime();
             // Título
-            String title = driver.findElement(By.className(xPathTitle)).getText();
+            String title = driver.findElement(By.className(classTitle)).getText();
             System.out.println("Título: \n " + title + "\n");
             Acoes.holdTime();
             // Subtítulo
-            String subtitle = driver.findElement(By.className(xPathSubTitle)).getText();
+            String subtitle = driver.findElement(By.className(classSubTitle)).getText();
             System.out.println("Subtítulo: \n " + subtitle + "\n");
             Acoes.holdTime();
             // Autor
-            String author = driver.findElement(By.className(xPathAuthor)).getText();
+            String author = driver.findElement(By.className(classAuthor)).getText();
             author = author.substring(4, author.length());
             System.out.println("Autor: \n " + author + "\n");
             Acoes.holdTime();
             // Data
-            String datePublish = driver.findElement(By.className(xPathDate)).getAttribute("datetime");
+            String datePublish = driver.findElement(By.className(classDate)).getAttribute("datetime");
             SimpleDateFormat sdfOriginal = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX");
             Date minhaDataEmDate = sdfOriginal.parse(datePublish);
             SimpleDateFormat sdfFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
@@ -54,7 +54,7 @@ public class Acoes extends Principal {
             System.out.println("Data: \n " + dateFormated + "\n");
             Acoes.holdTime();
             // Conteúdo
-            String content = driver.findElement(By.className(xPathContent)).getText();
+            String content = driver.findElement(By.className(classContent)).getText();
             System.out.println("Conteúdo: \n " + content);
             Acoes.holdTime();
             number = number + 1;

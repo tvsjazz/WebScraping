@@ -13,11 +13,11 @@ public class Principal {
     public static String url = "https://www.infomoney.com.br/mercados/";
     public static Integer load = 2;
     public static Integer numPage = 1;
-    public static String xPathTitle = "page-title-1";
-    public static String xPathSubTitle = "article-lead";
-    public static String xPathAuthor = "author-name";
-    public static String xPathContent = "col-md-9";
-    public static String xPathDate = "entry-date";
+    public static String classTitle = "page-title-1";
+    public static String classSubTitle = "article-lead";
+    public static String classAuthor = "author-name";
+    public static String classContent = "col-md-9";
+    public static String classDate = "entry-date";
     public static Integer number = 1;
 
     public static void main(String[] args) {
